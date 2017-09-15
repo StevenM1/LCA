@@ -1,0 +1,9 @@
+Package: LCA4
+Type: Package
+Title: Tools For Simulating The LCA
+Version: 1.0
+Author: Steven Miletic
+Maintainer: Steven Miletic <steven@miletic.nl>
+Description: Simulation code for the Leaky, Competing Accumulator (LCA) model (Usher & McCelland, 2001).
+License: Unlimited
+Encoding: UTF-8

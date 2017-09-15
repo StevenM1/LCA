@@ -1,0 +1,14 @@
+# Makefile for building the C language shared library for the simulationLCA function
+C = gcc
+OPTS = -c -fPIC
+LOADER = gcc
+
+OBJECTS = simulateLCA.o
+
+ simulateLCA.so: $(OBJECTS)
+	R CMD SHLIB -o simulateLCA.so $(OBJECTS)
+
+.c.o: ; $(C) $(OPTS) -c $<
+
+clean:
+	-rm *.o *.so
